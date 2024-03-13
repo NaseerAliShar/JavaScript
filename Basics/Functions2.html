@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        function Hello() {
+            console.log("Hello World!");
+        }
+        function Function(fun) {
+            console.log("Hello " + fun);
+        }
+        function Age(a) {
+            return a;
+        }
+        function Add(x, y) {
+            return x + y;
+        }
+
+        Hello();
+        Function("Functions");
+        console.log("You are " + Age(8) + " years old");
+        console.log("Sum of x and y is " + Add(4, 6));
+
+        let name = "Naseer", age = 20;
+        console.log(`My Name is ${name} and I'm ${age} Years Old`);
+
+        let member = [
+            { Name: 'Ayaz', Age: 28 },
+            { Name: 'Raza', Age: 26 },
+            { Name: 'Shahbaz', Age: 25 },
+            { Name: 'Qamber', Age: 23 },
+            { Name: 'Maqbool', Age: 24 },
+            { Name: 'Naseer', Age: 22 },
+        ];
+        console.table(member);
+        console.warn("This is Warning");
+    </script>
+</head>
+
+<body>
+    <h2>Hello JavaScript Functions</h2>
+</body>
+
+</html>

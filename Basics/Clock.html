@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        .container {
+            display: flex;
+            font-weight: bold;
+            font-size: 50px;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Digital Clock</h1>
+    <div class="container">
+        <div id="hour">10</div>
+        <div>:</div>
+        <div id="minute">10</div>
+        <div>:</div>
+        <div id="second">10</div> &nbsp;
+        <div id="ampm">AM</div>
+    </div>
+</body>
+<script>
+    // const fdate = new Date();
+    // fdate.setDate(15);
+    // fdate.setMonth(9);
+    // fdate.setFullYear(2023);
+    // console.log(fdate);
+
+    // const date = new Date();
+    // console.log(date);
+
+    // const diff = fdate.getTime() - date.getTime();
+    // console.log((diff / (1000 * 60 * 60 * 24 * 30)).toFixed(1));
+    // // console.log(Math.floor(diff/(1000*60*60*24*30)));
+
+    // const hours = document.getElementById("hour");
+    // const minutes = document.getElementById("minute");
+    // const seconds = document.getElementById("second");
+
+    // setInterval(function () {
+    //     const date = new Date();
+    //     hours.innerText = date.getHours();
+    //     minutes.innerText = date.getMinutes();
+    //     seconds.innerText = date.getSeconds();
+    // }, 1000);
+
+
+    const hours = document.getElementById("hour");
+    const minutes = document.getElementById("minute");
+    const seconds = document.getElementById("second");
+    const ampm = document.getElementById("ampm")
+
+    setInterval(function () {
+        const date = new Date();
+        let hour = date.getHours();
+        let AmPm = "AM";
+        if (hour > 11) {
+            AmPm = "PM";
+            if (hour > 12) {
+                hour -= 12;
+            }
+        }
+        hours.innerText = hour;
+        minutes.innerText = date.getMinutes();
+        seconds.innerText = date.getSeconds();
+        ampm.innerText = AmPm;
+    }, 1000);
+
+</script>
+
+</html>

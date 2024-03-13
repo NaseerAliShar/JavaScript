@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get</title>
+</head>
+
+<body>
+    <h1>DOM Get Elements</h1>
+    <p id="myid">Lorem ipsum dolor amet consectetur adipisicing.</p>
+
+    <div class="myclass">Lorem ipsum dolor sit amet consectetur adipisicing elit Provident.</div>
+    <div class="myclass">Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit Provident.</div>
+    <p id="abc" class="efg" onclick="xyz" style="color: blue;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit accusantium porro.</p>
+
+    <script>
+        let a, b, c;
+        a = document.getElementById("myid");
+        b = document.getElementsByTagName("div")[0];
+        c = document.getElementsByClassName("myclass")[0];
+
+        // a = document.getElementById("myid").innerText;
+        // b = document.getElementsByTagName("div")[1].innerText;
+        // c = document.getElementsByClassName("myclass")[1].innerText;
+
+        // a = document.getElementById("myid").innerHTML;
+        // b = document.getElementsByTagName("div")[1].innerHTML;
+        // c = document.getElementsByClassName("myclass")[1].innerHTML;
+
+        // a = document.getElementById("abc").getAttribute("class");
+        // b = document.getElementById("abc").getAttribute("onclick");
+        // c = document.getElementById("abc").getAttribute("style");
+
+        // a = document.getElementById("abc").getAttributeNode("style");
+        // b = document.getElementById("abc").getAttributeNode("style").name;
+        // c = document.getElementById("abc").getAttributeNode("style").value;
+
+        // a = document.getElementById("abc").attributes[0];
+        // b = document.getElementById("abc").attributes[0].name;
+        // c = document.getElementById("abc").attributes[0].value;
+
+        // a = document.getElementById("myid");
+        // b = document.getElementById("myid").innerText;
+        // c = document.getElementById("myid").innerHTML;
+
+        // a = document.getElementById("abc").attributes;
+        // b = document.getElementById("abc").getAttribute("style");
+        // c = document.getElementById("abc").getAttributeNode("style");
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    </script>
+</body>
+
+</html>

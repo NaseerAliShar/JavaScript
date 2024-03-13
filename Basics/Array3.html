@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array3</title>
+    <script>
+        var a = ["Murtaza", "Mehrab", "Nadeem", "Naseer"];
+        var b = [3, 5, 1, 4, 2, 6];
+
+        console.log(b.length);
+        console.log(b.sort());
+        console.log(b.reverse());
+        console.log(Array.from("From"));
+
+        // push and pop
+        // b.pop();
+        // console.log(b);
+        // b.push(7);
+        // console.log(b);
+
+        // shift and unshift
+        // b.shift();
+        // console.log(b);
+        // b.unshift(8);
+        // console.log(b);
+
+        // Concate and Join
+        // var x=["Murtaza","Mehrab "];
+        // var y=x.concat(" Nadeem"," Naseer");
+        // document.write(y+"<br/>");
+        // var z="Ghaffar";
+        // var t=y.concat(z);
+        // console.log(t+"<br/>");
+        // var t=x.concat(y,z);
+        // console.log(t+"<br/>");
+        // console.log(x+y+z+"<br/>");
+        // console.log(t.join(" "));
+
+        // slice and splice
+        // console.log(a.slice(2));    // This print from given index upto end
+        // console.log(a.slice(1,3));  // This print range like  [x,y)
+        // a.splice(2,0,"Ghaffar")     // Add new element in the index 2
+        // console.log(a);             
+        // a.splice(2,3,"Ghaffar")     // Repalce element of index 2 and 3 
+        // console.log(a);
+
+        let arr = [1, 2, 3, 4, 5];
+        // ForEach Loop
+        console.log("This is ForEach loop1");
+        arr.forEach(value => {
+            console.log(value);
+        });
+
+        console.log("This is ForEach loop2");
+        arr.forEach((value) => {
+            console.log(value + 10);
+        });
+
+        console.log("This is ForEach loop3");
+        arr.forEach(function (value) {
+            console.log(value + 20);
+        });
+
+        console.log("This is ForEach loop4");
+        arr.forEach(function (value, index) {
+            console.log(index + ":" + value);
+        });
+
+        console.log("This is ForEach loop5");
+        arr.forEach(fact);
+        function fact(value, index) {
+            console.log(index + ":" + value * value);
+        }
+
+        console.log("This is Map Method1");
+        arr.map(value => {
+            console.log(value);
+        });
+
+        console.log("This is Map Method2");
+        let m = arr.map(value => {
+            return value * 10;
+        });
+        console.log(m);
+
+        console.log("This is Map Method3");
+        let n = arr.map((value, index, arr) => {
+            return value, index, arr;
+        });
+        console.log(n);
+
+        console.log("This is Filter Method");
+        let o = arr.filter(value => {
+            return value < 20;
+        });
+        console.log(o);
+
+        console.log("This is Reduce Method");
+        let p = arr.reduce((x, y) => {
+            return x + y;
+        });
+        console.log(p);
+
+    </script>
+</head>
+
+<body>
+    <h2>Array Methods</h2>
+</body>
+
+</html>

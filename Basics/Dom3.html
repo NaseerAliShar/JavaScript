@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query</title>
+</head>
+<body>
+    <h4 id="id1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    <h4 id="id2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    <h4 class="myclass">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    <h4 class="myclass">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit Porro corrupti aliquam.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit Porro corrupti aliquam.</p>
+
+</body>
+<script>
+    document.querySelector("#id2").innerHTML = "<h1>Good Morning Javascript</h1>";
+    document.querySelectorAll("p")[0].innerHTML = "<h4>Good Morning Javascript</h4>";
+    document.querySelectorAll("p")[1].innerHTML = "<h5>Good Morning Javascript</h5>";
+    document.querySelectorAll(".myclass")[0].innerHTML = "<h2>Good Morning Javascript</h2>";
+    document.querySelectorAll(".myclass")[1].innerHTML = "<h3>Good Morning Javascript</h3>";
+
+    let a = document.querySelector("#id1");
+    a.innerHTML = "<h1>Query Selectors in Javascript</h1>";
+    a.style.backgroundColor = "#000"
+    a.style.color = "#fff";
+    a.style.width = "30%";
+</script>
+
+</html>

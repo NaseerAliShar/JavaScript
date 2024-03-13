@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body align="center">
+    <form onsubmit="Data(event)"> <!-- Passing the event parameter -->
+        <h1>Facebook</h1>
+        <input type="email" placeholder="Username" id="email"> <br><br>
+        <input type="password" placeholder="Password" id="pass"> <br><br>
+        <button type="submit">Log in</button>
+    </form>
+    <div>
+        <h1>Preview</h1>
+        <p id="user"></p>
+        <p id="psw"></p>
+    </div>
+
+    <script>
+        function Data(e) {
+            e.preventDefault();
+            let username = e.target.elements.email.value; // Accessing form elements correctly
+            let password = e.target.elements.pass.value; // Accessing form elements correctly
+            console.log(username);
+            console.log(password);
+            document.getElementById('user').innerText = "Username: " + username
+            document.getElementById('psw').innerText = "Password: " + password
+        }
+    </script>
+</body>
+
+</html>

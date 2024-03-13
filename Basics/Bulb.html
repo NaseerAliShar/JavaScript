@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        .btn {
+            margin: 40px;
+            padding: 5px 10px;
+            font-size: large;
+        }
+
+        #bulb {
+            border: 1px solid red;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello Bulb</h1>
+    <div id="bulb"></div>
+    <button class="btn" onclick="bulb()">ON</button>
+
+    <script>
+        // Method 1
+        let bulb = document.querySelector("#bulb");
+        let btn = document.querySelector(".btn");
+        let a = 0;
+        btn.addEventListener("click", function () {
+            if (a == 0) {
+                bulb.style.backgroundColor = "yellow";
+                btn.textContent = "OFF";
+                a = 1;
+            } else {
+                bulb.style.backgroundColor = "transparent";
+                btn.textContent = "ON";
+                a = 0;
+            }
+        })
+
+        // Method 2
+        // document.querySelector(".btn").addEventListener("click", function () {
+        //     document.querySelector("#bulb").style.backgroundColor = "yellow";
+        // })
+
+        // Method 3
+        // document.getElementsByClassName("btn")[0].onclick = bulbon;
+        // function bulbon() {
+        //     document.getElementById("bulb").style.backgroundColor = "yellow";
+        // }
+
+        // Method 4
+        // function bulb() {
+        //     document.getElementById("bulb").style.backgroundColor = "yellow";
+        // }
+    </script>
+</body>
+
+</html>

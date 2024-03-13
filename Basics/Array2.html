@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array2</title>
+    <script>
+        let arr = [
+            [0, 1, 2],
+            [10, 11, 12],
+            [20, 21, 22],
+            [30, 31, 32]
+        ];
+        // Method 1
+        console.log(arr);
+        // Method 2
+        for (let i = 0; i < 4; i++) {
+            console.log(arr[i]);
+        }
+        // Method 3
+        for(let j=0; j<4; j++){
+            for(let k=0; k<3; k++){
+                console.log(arr[j][k]+" ")
+            } 
+        }
+        console.log(arr[0][1]);
+        console.log(arr[1][1]);
+        // Method 4
+        document.write("<table cellspacing='10px' border='5px'>");
+        for (let j = 0; j < 4; j++) {
+            document.write("<tr>");
+            for (let k = 0; k < 3; k++) {
+                document.write("<td>" + arr[j][k] + "</td>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Two Dimension Array</h2>
+</body>
+
+</html>

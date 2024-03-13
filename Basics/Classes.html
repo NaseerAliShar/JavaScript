@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <h2>Hello Object Oriented Programming</h2>
+    <script>
+        class student{
+            constructor(name, age){
+                console.log("Hello Constructor");
+                this.name = name;
+                this.age = age;
+            }
+            hello(){
+                console.log(`Hello ${this.name} Your Age is ${this.age} Years`);
+            }
+            static Static(){
+                console.log("Static Method");
+            }
+        }
+        let obj1 = new student("Naseer", 20);
+        let obj2 = new student("Nadeem", 22);
+        obj1.hello(); 
+        obj2.hello(); 
+        student.Static();      
+    </script>
+</body>
+</html>

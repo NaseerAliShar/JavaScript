@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <button onclick="studentinfo()">Add New</button>
+    <script>
+        //  let student = [];
+        // function studentinfo(name, city, id, age) {
+        //     let std = {
+        //         name: prompt("Enter Student Name:"),
+        //         city: prompt("Enter City Name:"),
+        //         id: +prompt("Enter Student ID:"),
+        //         age: +prompt("Enter Student Age:")
+        //     };
+        //     student.push(std)
+        //     console.log(student);
+        // }
+        // localStorage.setItem("name","Naseer");
+
+        let prev = localStorage.getItem("student");     // Get From LocalStorage
+        let student = prev ? JSON.parse(prev) : [];
+        function studentinfo(name, city, id, age) {
+            let std = {
+                name: prompt("Enter Student Name:"),
+                city: prompt("Enter City Name:"),
+                id: +prompt("Enter Student ID:"),
+                age: +prompt("Enter Student Age:")
+            };
+            student.push(std)
+            console.log(student);
+            let stringify = JSON.stringify(student);    // Convert into String
+            localStorage.setItem("student",stringify);   // Save into LocalStorage
+        }
+    </script>
+</body>
+</html>

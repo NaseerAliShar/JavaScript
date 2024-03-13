@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h1>Objects in Javascript</h1>
+    <button onclick="studentinfo()">Add New</button>
+    <script>
+
+        // Array of Object
+        // var myarr = [
+        //     { name: "Nadeem", age: 20 },
+        //     { name: "Naseer", age: 18 },
+        //     { name: "Ghaffar", age: 16 },
+        // ];
+        // console.log(myarr);
+        // for (let index = 0; index < myarr.length; index++) {
+        //     console.log(myarr[index]);
+        //     console.log(myarr[index].name);
+        // }
+        // Objects in Array
+        // let obj1 ={
+        //     name:"ayaz",
+        //     city : "hala",
+        //     surname : "shar",
+        //     id : 40,
+        //     age : 26
+        // }
+        // let obj2 ={
+        //     name:"naseer",
+        //     city : "karachi",
+        //     surname : "shar",
+        //     id : 30,
+        //     age : 23
+        // }
+        // let obj3 ={
+        //     name:"babar",
+        //     city : "matli",
+        //     surname : "khatri",
+        //     id : 44,
+        //     age : 20
+        // }
+        // let obj=[obj1, obj2,obj3];
+        // console.log(obj);
+
+        // Functions with object in Array without argument
+        // function student() {
+        //     return  { 
+        //         name:"nadeem",
+        //         city : "nawabshah",
+        //         surname : "shar",
+        //         id : 69,
+        //         age : 21
+        //     };
+        // }
+        // let stu=[student(),student()];
+        // console.log(stu);
+
+        // Functions with object in Array with argument
+        // function student(name, city, id, age ) {
+        //     return  { 
+        //         name: name,
+        //         city : city,
+        //         id : id,
+        //         age : age
+        //     };
+        // }
+        // let stu=[
+        //      student("ghaffar", "nawabshah", 20, 17), 
+        //      student("raza", "karachi", 21, 25)];
+        //      console.log(stu);
+
+        // Functions with object in Array with argument and prompt
+        function student(name, city, id, age) {
+            return {
+                name: prompt("Enter Name:"),
+                city: prompt("Enter City:"),
+                id: +prompt("Enter id:"),
+                age: +prompt("Enter age:")
+            };
+        }
+        let stu = [student()];
+        console.log(stu);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+
+<body>
+    <h2>Inheritance</h2>
+    <script>
+        class base {
+            constructor(capital) {
+                this.capital = capital
+                console.log("Hello Inheritance");
+            }
+            class1() {
+                this.pop = 400000;
+                this.name = "Child";
+                console.log("Hello Parent Class");
+            }
+        };
+
+        class derived extends base {
+            class2() {
+                console.log(`Hello ${this.name} Class and Population is ${this.pop}`);
+            }
+        };
+
+        class capital extends derived{
+            class3(){
+                console.log("Capital of Sindh is " + this.capital);
+            }
+        }
+
+        let obj = new capital("Karachi");
+        obj.class1();
+        obj.class2();
+        obj.class3();
+    </script>
+</body>
+
+</html>

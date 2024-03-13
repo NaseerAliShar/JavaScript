@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+
+<body>
+    <h1>DOM Set Elements</h1>
+    <p id="id1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p id="id2">Lorem ipsum dolor amet consectetur <b>adipisicing</b> elit.</p>
+    <div>Lorem ipsum dolor amet consectetur adipisicing elit Provident.</div>
+    <div>Lorem ipsum dolor amet consectetur <b>adipisicing</b> elit Provident.</div>
+    <p class="myclass">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="myclass">Lorem ipsum dolor sit amet consectetur adipisicing elit Provident.</p>
+    <p id="new" class="abc" style="background-color: yellow;" onclick="xyz">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, porro.</p>
+    <script>
+        let a, b, c, d;
+        a = document.getElementById("id1").innerText;
+        b = document.getElementById("id2").innerHTML;
+
+        c = document.getElementById("id1").innerText="<h2InnerText by ID Name</h2>";
+        d = document.getElementById("id2").innerHTML="<h2>InnerHTML by ID Name</h2>";
+
+        a = document.getElementsByTagName("div")[0].innerText = "<h2>InnerText by Tag Name</h2>";
+        b = document.getElementsByTagName("div")[1].innerHTML = "<h2>InnerHTML by Tag Name</h2>";
+
+        c = document.getElementsByClassName("myclass")[0].innerText = "<h2>InnerText by Class Name</h2>";
+        d = document.getElementsByClassName("myclass")[1].innerHTML = "<h2>InnerHTML by Class Name</h2>";
+
+        document.getElementById("new").setAttribute("style", "background:red");
+        document.getElementById("new").attributes[0].value = "abc";
+        document.getElementById("new").removeAttribute("style");
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+    </script>
+</body>
+
+</html>

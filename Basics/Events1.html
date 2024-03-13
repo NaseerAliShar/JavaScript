@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="../BS/bootstrap.css">
+</head>
+<style>
+    #scr {
+        width: 20%;
+        text-align: justify;
+    }
+</style>
+<script>
+    function clickevent() {
+        let x = document.getElementById("demo");
+        x.style.fontSize = "25px";
+        x.style.color = "red";
+        x.style.background = "yellow";
+    }
+
+</script>
+
+<body onkeypress="clickevent()" onresize="clickevent()" onscroll="clickevent()">
+    <button class="btn btn-primary" onclick="clickevent()">Click Me</button>
+    <button class="btn btn-danger" ondblclick="clickevent()">Double Click</button>
+    <button class="btn btn-warning" oncontextmenu="clickevent()">Right Click</button>
+    <button class="btn btn-info" onmouseenter="clickevent()">Mouse Enter</button>
+    <button class="btn btn-success" onmouseout="clickevent()">Mouse Out</button>
+    <button class="btn btn-danger" onmousedown="clickevent()">Mouse Down</button>
+    <button class="btn btn-info" onmouseup="clickevent()">Mouse Up</button>
+    <p id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum placeat maiores numquam adipisci
+        modi ad aliquam, quidem totam perferendis molestiae illum assumenda ab nihil. Eum corrupti quis deleniti,
+        corporis necessitatibus, inventore quam nisi ad sint fugit consectetur repudiandae sit minima earum ratione
+        debitis! Provident, natus numquam fuga dolor esse qui temporibus aperiam nam culpa, id tempore quo
+        necessitatibus excepturi, fugit amet quos cum placeat iste maiores sed laborum cupiditate voluptas alias? Nisi
+        soluta sit cumque nihil reprehenderit, accusantium, rem ad ut, harum a ipsum. Laboriosam quibus.</p>
+</body>
+
+</html>

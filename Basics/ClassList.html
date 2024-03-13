@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        .abc {
+            background-color: #000;
+        }
+
+        .efg {
+            color: #fff;
+        }
+
+        .ijk {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="css">ClassList Methods</h2>
+</body>
+<script>
+
+    // Add & Remove Methods
+    let a = document.getElementById("css");
+    a.className = "abc efg";
+    a.classList.add("ijk", "xyz");
+    a.classList.remove("xyz");
+    let b = a.classList;
+    console.log(b);
+
+    // Length Method
+    let len = a.classList.length;
+    console.log(len);
+
+    // Toggle Method
+    document.getElementById("css").addEventListener("click", tog);
+    function tog() {
+        document.getElementById("css").classList.toggle("ijk");
+    }
+
+    // Item Method
+    let item = document.getElementById("css").classList.item(1);
+    console.log(item);
+
+    // Contains Method
+    let con = document.getElementById("css").classList.contains("abc");
+    console.log(con);
+</script>
+
+</html>

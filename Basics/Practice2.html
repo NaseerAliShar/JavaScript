@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script>
+        // Question # 01
+        let marks = {
+            a: 20,
+            b: 40,
+            c: 70
+        }
+        for (let i = 0; i < Object.keys(marks).length; i++) {
+            console.log("Marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]]);
+        }
+
+        // Question # 02
+        for (let key in marks) {
+            console.log("The Marks of " + key + " are " + marks[key]);
+        }
+
+        // Question # 03
+        //    let i;
+        //    while (i!=5) {
+        //     i=prompt("Enter a Value:");
+        //    }
+        //    console.log("You can not Enter More Number");
+
+        // Question # 04
+        function mean(x, y, z, s, t) {
+            return (x + y + z + s + t) / 5;
+        }
+        let a = 10, b = 15, c = 20, d = 25, e = 30;
+        console.log("Average is " + mean(a, b, c, d, e));
+    </script>
+</head>
+
+<body>
+    <h2>Practice Set 2</h2>
+</body>
+
+</html>

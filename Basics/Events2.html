@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        document.getElementById("btn").style.background = "red";
+    }
+    function handleFocus(element) {
+        element.style.background = "grey";
+        element.style.color = "white"
+    }
+    function handleBlur(element) {
+        element.style.background = "";
+    }
+    function handleInput(element) {
+        var x = element.value;
+        document.getElementById("input").innerHTML = x
+    }
+    function handleChange(element) {
+        var x = element.value;
+        document.getElementById("input").innerHTML = x
+    }
+    function handleSelect() {
+        console.log("Selected Text");
+    }
+    function handleSubmit() {
+        var x = document.getElementById("name").value
+        alert("Hello " + x);
+    }
+    function handleInvalid(){
+        alert("Please fill the name!")
+    }
+</script>
+
+<body>
+    <form action="" onsubmit="handleSubmit(event)">
+        <input type="text" name="" id="name" onfocus="handleFocus(this)" onblur="handleBlur(this)"
+            oninput="handleChange(this)" onsubmit="handleSubmit(this)" oninvalid="handleInvalid()" required>
+        <input type="text" name="" id="" onfocus="handleFocus(this)" onblur="handleBlur(this)"
+            onchange="handleInput(this)" onselect="handleSelect(this)">
+        <input type="submit" value="Submit" id="btn">
+        <h2 id="input"></h2>
+    </form>
+</body>
+
+</html>
