@@ -1,4 +1,3 @@
-// console.log("Hello World!");
 // const obj = [
 //     {
 //         "Name": "Murtaza",
@@ -48,10 +47,3 @@
 // }
 // const countButton = document.getElementById("countButton");
 // countButton.addEventListener("click", updateCount);
-
-let date = new Date()
-
-const name = String("Naseer")
-console.log(name.toUpperCase());
-console.log(name.substring(2,4));
-console.log(name.slice(-3,6));
