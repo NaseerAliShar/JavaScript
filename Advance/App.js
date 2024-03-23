@@ -39,11 +39,11 @@
 //     console.log(e);
 // });
 
-// let count = 0;
-// function updateCount() {
-//     count++;
-//     const countButton = document.getElementById("countButton");
-//     countButton.textContent = "Click " + count;
-// }
-// const countButton = document.getElementById("countButton");
-// countButton.addEventListener("click", updateCount);
+let count = 0;
+function updateCount() {
+    count++;
+    const countButton = document.getElementById("countButton");
+    countButton.textContent = "Click " + count;
+}
+const countButton = document.getElementById("countButton");
+countButton.addEventListener("click", updateCount);
