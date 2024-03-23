@@ -38,7 +38,7 @@ console.log(Array.isArray("Naseer"));
 console.log(Array.from("Naseer"));
 console.log(Array.from({ name: "Naseer" }));
 
-const a = 1, b = 3, c = 3
+const a = 1, b = 2, c = 3
 console.log(Array.of(a, b, c));
 
 //  array.map(val => console.log(val));                           // Map
