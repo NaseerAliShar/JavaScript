@@ -39,6 +39,7 @@
 //     console.log(e);
 // });
 
+// Count Button in JavaScript
 let count = 0;
 function updateCount() {
     count++;
